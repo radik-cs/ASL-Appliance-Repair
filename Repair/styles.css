@@ -1,0 +1,1086 @@
+/*
+#
+# Site developed by: Radik Fakhretdinov
+#  Portfolio: https://radikfakhretdinov.com
+# LinkedIn: https://www.linkedin.com/in/radikfakhretdinov/
+# Email: radik.engineer@gmail.com
+# 
+*/
+
+
+
+/* Styles for desktop devices (1008px and larger) */
+@media only screen and (min-width: 1008px) {
+  /* Update styles for desktop here */
+  /* For example, you can adjust layout, column widths, font sizes, etc. */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+  
+  header {
+    background-color: white;
+    width: 1440px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    flex: 1;
+    justify-content: left;
+  }
+  
+  .logo {
+    width: 300px;
+    height: 130px;
+    display: block;
+  }
+
+  
+  .main-nav {
+    flex: 1;
+    display: flex;
+    justify-content:left;
+    text-align: left;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+  }
+  
+  .main-nav ul li {
+    display: inline;
+  }
+  
+  .main-nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .main-nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  .call-us-nav {
+    flex: 1;
+    text-align:center;
+  }
+  
+  .call-us-nav ul {
+    list-style: none;
+  }
+  
+  .call-us-nav ul li {
+    display: inline;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration:underline;
+  }
+  
+  #hero {
+    background-image: url("images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    color: #000;
+    position: relative;
+  }
+  
+  #hero:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .hero-content ul {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .hero-content ul li {
+    margin-bottom: 10px;
+    margin-left: 70px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  #hero .btn.schedule-appointment {
+    background-color: #ff822e;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  #hero .btn.contact-us {
+    background-color: transparent;
+    color: #000;
+  }
+  
+  #about {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  #about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-left {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    width: 720px;
+    height: 600px;
+  }
+  
+  .about-left ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .about-left ul li {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .about-left ul li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+  }
+  
+  .about-left ul li::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid blue;
+  }
+  
+  
+  .about-right {
+    flex: 1;
+    padding: 40px;
+    width: 720px;
+    height: 600px;
+    /* Add any additional styles for the right box if desired */
+  }
+  
+  .about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #services {
+    padding:10px;
+    text-align: center;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(2, 317px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .service-image {
+    width: 260px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .service-brands-image {
+    flex: 1;
+    padding:0%;
+    width: 1230px;
+    height: 380px;
+    margin: 0 auto;
+    text-align: center; /* Add this line to center the text */
+    margin-top:20px; /* Add appropriate margin-top to create spacing */
+    margin-bottom:auto; /* Add appropriate margin-bottom to create spacing */
+  }
+  
+  
+  .service-item h3 {
+    font-size: 18px;
+  }
+  
+  .service-item .btn.schedule-appointment {
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 5px;
+    margin-top: 10px;
+  }
+
+  #schedule {
+    background-color: #f1f1f1;
+  }
+
+  input[type="text"],
+select[name="appliance"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+  section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  section ul li {
+    margin-bottom: 10px;
+  }
+  
+  section form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  section form input,
+  section form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+  }
+  #contact{
+    background-color: rgb(229, 223, 223);
+  }
+
+  #contact textarea {
+    height: 80px;
+  }
+
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+
+
+/*****************************************************************************/
+/*****************************************************************************/
+
+/* Styles for tablet devices (641px to 1007px) */
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  /* Update styles for tablet here */
+  /* For example, you can adjust column widths, font sizes, etc. */
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /******* CSS for Header *******/
+  header {
+    height: 300px;
+    padding: 0 10px;
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+  .logo-container {
+    width: 110%; /* Take full width */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+  .logo {
+    width: 320px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav{
+    width: 110%;
+    height: 150px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; 
+    text-align: center;
+  }
+  .call-us-nav {
+    width: 110%;
+    text-align: center;
+    font-size: 20px;
+    margin-top:20px;
+    font-weight: bold;
+  }
+  .call-us-nav ul li {
+    color: black;
+    display: block;
+    margin-bottom:0%;
+  }
+  .main-nav ul li {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 5px;
+  }
+
+/******* CSS for ASL Appliance Repair *******/
+#hero {
+  width: 748px;
+  height: 400px;
+  background-image: url("images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  position: relative;
+}
+.hero-content {
+  max-width: 748px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: #fff;
+}
+.hero-content ul {
+  font-size: 24px;
+  color: #fff;
+  list-style: disc;
+}
+#hero:before {
+  content: "";
+  background-color: rgba(63, 59, 59, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-content ul li {
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+#hero .btn.schedule-appointment {
+  background-color: #ff822e;
+  color: #fff;
+}
+#hero .btn.contact-us {
+  background-color: transparent;
+  color: #000;
+}
+
+/******* CSS for About Us *******/
+#about{
+  text-align: center;
+  text-align: center;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+.about-right {
+  padding: 10px;
+  width: 100%;
+  height: 600px;
+}
+.about-right img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  position:relative;
+}
+
+.about-left{
+  width: 100%;
+  height: 100%;
+}
+.about-left h3{
+  margin-bottom:auto;
+  margin-top: auto;
+  
+}
+.about-left h4{
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
+
+
+/******* CSS for Services *******/
+#services {
+  width: 100%;
+  padding:0%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.service-grid{
+  
+  width: 748px;
+  margin: auto;
+  height: 600px;
+  padding:0%;
+  display:grid;
+  flex-wrap: wrap;
+  line-height: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-gap:20px;
+  margin-bottom:auto;
+  object-fit: cover;
+  
+}
+.service-item{
+  margin: auto;
+  width: 307px;
+  height:315px;
+  display: flex;
+  flex-basis: 20%;
+  padding: 10px;
+  flex-direction:column;
+  background-color: #f1f1f1;
+  margin-top:10px;
+  margin-bottom:0%;
+  padding: 10%;
+  line-height:0%;
+  padding-bottom:50px;
+  padding-top:50px;
+  padding-right:40px;
+  padding-left:40px;
+  flex-direction:column;
+  justify-content:center;
+}
+.service-item > div {
+  width: 30%;
+  margin-bottom:0%;
+}
+.service-image{
+  width:280px;
+  height:200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+ 
+}
+.service-item h3 {
+  font-size: 20px;
+}
+.service-item p {
+  font-size: 18x;
+}
+.service-item .btn.schedule-appointment {
+  width: 90px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 10px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.service-text-brands{
+  margin-top:1200px;
+  width: auto;
+  line-height: 24px;
+  margin-bottom: 0%;
+}
+.service-text-brands h3{
+  margin-top:0%;
+}
+.service-brands-image {
+  flex: 1;
+  padding:0%;
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-right:0%;
+  margin-left:0%;
+  text-align: center;
+  margin-top:20px; 
+  margin-bottom:auto; 
+  padding-bottom: 20px;
+  line-height: 16px;
+}
+
+
+/******* CSS for Schedule Appointment *******/
+#schedule {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom:auto;
+}
+select[name="appliance"] {
+  width:95%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+section {
+  padding: 20px 0;
+  text-align: center;
+}
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+section ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+section ul li {
+  margin-bottom:auto;
+}
+section form {
+  width: 748px;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
+}
+section form textarea {
+  display: block;
+  width:100%;
+  padding: 10px;
+  margin-bottom:0%; 
+}
+section form input{
+  display:block;
+    width:100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+section form .btn{
+  width: 20%;
+  height: 40px;
+  font-size: 18px;
+  line-height: 5px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left:0%;
+  margin-right:0%;
+}
+
+
+
+/******* CSS for Contact Us *******/
+#contact{
+  background-color: rgb(229, 223, 223);
+}
+#contact form textarea {
+  height:80px;
+}
+#contact form .btn{
+  margin-top:60px;
+
+}
+
+
+/******* CSS for Footer *******/
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+ }
+}
+
+
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+
+/* Styles for mobile devices (max-width: 640px) */
+@media only screen and (max-width: 640px){
+
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  header {
+  
+    height: 420px;
+    padding: 0 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .logo-container{
+    width: 574px;
+    height: 227px;
+  }
+  .logo {
+    width: 400px;
+    height: 183px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main-nav{
+    width: 574px;
+    height: 120px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; 
+    text-align: center;
+  }
+  .call-us-nav {
+    text-align: center;
+    font-size: 20px;
+    margin-top:20px;
+    font-weight: bold;
+  }
+
+  .call-us-nav ul li {
+    color: black;
+    display: block;
+    margin-bottom:0%;
+  }
+
+  .main-nav ul li {
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 5px;
+  }
+
+/******* CSS for ASL Appliance Repair *******/
+  #hero {
+    width: 574px;
+    height: 350px;
+    background-image: url("images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    position: relative;
+  }
+
+  .hero-content {
+    max-width: 574px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .hero-content ul {
+    font-size: 24px;
+    color: #fff;
+    list-style: disc;
+  }
+
+  #hero:before {
+    content: "";
+    background-color: rgba(63, 59, 59, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content ul li {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  #hero .btn.schedule-appointment {
+    background-color: #ff822e;
+    color: #fff;
+  }
+  #hero .btn.contact-us {
+    background-color: transparent;
+    color: #000;
+  }
+
+
+  /******* CSS for About Us *******/
+  #about{
+    text-align: center;
+    text-align: center;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  #about h2 {
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .about-right {
+    padding: 10px;
+    width: 554px;
+    height: 450px;
+  }
+  
+  .about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:relative;
+  }
+
+  .about-left{
+    width: 100%;
+    height: 100%;
+  }
+  .about-left h3{
+    margin-bottom:auto;
+    margin-top: auto;
+    
+  }
+  .about-left h4{
+    margin-top: auto;
+    margin-bottom:auto;
+  }
+
+/******* CSS for Services *******/
+  #services {
+    padding:0%;
+    text-align: center;
+    margin-top: 20px;
+   
+  }
+ .service-grid{
+  width: 200px;
+  height: 500px;
+  padding:0%;
+  display:grid;
+  flex-wrap: wrap;
+  line-height: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:10px;
+  margin-bottom:auto;
+  margin-left:10px;
+  margin-right: 10px;
+ 
+  
+}
+
+.service-item{
+  width: 200px;
+  height:250px ;
+  display: flex;
+  flex-basis: 20%;
+  padding: 10px;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: #f1f1f1;
+  margin-top:10px;
+  margin-bottom:0%;
+  padding: 10%;
+  line-height:0%;
+  padding-bottom:50px;
+  padding-top:50px;
+  padding-right:40px;
+  padding-left:40px;
+}
+
+.service-item > div {
+  width: 30%;
+  margin-bottom:0%;
+}
+
+
+.service-image {
+  width: 260px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.service-item h3 {
+  font-size: 16px;
+}
+.service-item p {
+  font-size: 14px;
+}
+.service-item .btn.schedule-appointment {
+  width: 80px;
+  height: 20px;
+  font-size: 15px;
+  line-height: 5px;
+  margin-top:10px;
+}
+
+.service-text-brands{
+  margin-top:980px;
+  width: auto;
+  line-height: 24px;
+}
+.service-text-brands h3{
+  margin-top:0%;
+}
+.service-brands-image {
+  flex: 1;
+  padding:0%;
+  width: 574px;
+  height: 380px;
+  margin: 0 auto;
+  margin-right:0%;
+  margin-left:0%;
+  text-align: center;
+  margin-top:20px; 
+  margin-bottom:auto; 
+  padding-bottom: 10px;
+  line-height: 16px;
+}
+
+
+/******* CSS for Schedule Appointment *******/
+#schedule {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom:auto;
+}
+
+select[name="appliance"] {
+  width:105%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 20px 0;
+  text-align: center;
+}
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+section ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+section ul li {
+  margin-bottom:auto;
+}
+section form {
+  max-width:540px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
+}
+
+section form textarea {
+  display: block;
+  width:100%;
+  padding: 10px;
+  margin-bottom:0%;
+  
+}
+section form input{
+  display:block;
+    width:100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+section form .btn{
+  width: 20%;
+  height: 40px;
+  font-size: 18px;
+  line-height: 5px;
+  margin-top:40px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left:0%;
+  margin-right:0%;
+}
+
+/******* CSS for Contact Us *******/
+#contact{
+  background-color: rgb(229, 223, 223);
+}
+
+#contact form textarea {
+  height:80px;
+}
+
+
+
+/******* CSS for Footer *******/
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+}
+
+/************************************************************************/
+/************************************************************************/
